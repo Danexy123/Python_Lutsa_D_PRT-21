@@ -8,14 +8,14 @@ class Person:
 
     def save_to_json(self, filename):
         data = {
-            "n": self.name,
-            "a": self.age
+            "name": self.name,
+            "aga": self.age
         }
         with open(filename, "w") as file:
             json.dump(data, file)
 
-name = input("N: ")
-age = input("A: ")
+name = input("Name: ")
+age = input("Age: ")
 w = Person(name, age)
 w.save_to_json("Person.json")
 
