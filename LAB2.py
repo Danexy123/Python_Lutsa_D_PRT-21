@@ -13,3 +13,8 @@ class Person:
         }
         with open(filename, "w") as file:
             json.dump(data, file)
+
+name = input("N: ")
+age = input("A: ")
+w = Person(name, age)
+w.save_to_json("Person.json")
