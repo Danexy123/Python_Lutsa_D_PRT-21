@@ -18,3 +18,8 @@ name = input("N: ")
 age = input("A: ")
 w = Person(name, age)
 w.save_to_json("Person.json")
+
+with open('Person.json') as f:
+    templates = json.load(f)
+
+print(templates)
