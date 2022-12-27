@@ -34,4 +34,7 @@ print("Median: ", (H[49] + H[50]) / 2)
 #     product *= r[0]
 # print(product)
 
+import functools
+print (functools.reduce(lambda a, b : a * b, [random.choice(range(99999)) for i in range(100)]))
+
 
