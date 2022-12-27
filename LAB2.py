@@ -1,6 +1,5 @@
 import json
 
-
 class Student:
     def __init__(self, name, age, group, acad_perf, ):
         self.name = name
@@ -19,7 +18,7 @@ class Student:
             json.dump(data, file)
 
     def load_from_json(self, filename):
-        with open('Person.json') as file:
+        with open('student.json') as file:
             data_student = json.load(file)
 
         print(data_student)
@@ -27,5 +26,12 @@ class Student:
 
 name = input("Name: ")
 age = input("Age: ")
-w = Person(name, age)
-w.save_to_json("Person.json")
+group = input("group: ")
+acad_perf = input("academic performance: ")
+
+s = Student(name, age, group, acad_perf)
+
+s.save_to_json("student.json")
+s.load_from_json("student.json")
+
+
