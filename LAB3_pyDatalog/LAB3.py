@@ -1,5 +1,7 @@
 from pyDatalog import pyDatalog
 import random
+import sys
+sys.set_int_max_str_digits(0)
 
 #регистрация правил
 pyDatalog.create_terms('X, Z, Y, Sm, div, Average, y, SumRand, resultMulti, result')
