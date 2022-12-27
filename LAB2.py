@@ -34,4 +34,4 @@ s = Student(name, age, group, acad_perf)
 s.save_to_json("student.json")
 s.load_from_json("student.json")
 
-
+#print(type(s))
