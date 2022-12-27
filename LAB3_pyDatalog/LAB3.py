@@ -11,4 +11,8 @@ print(y[999999] == Sm)
 (div[X, Y] == Z) <= (X // Y == Z)
 print(div[y[999999], 999999] == Average)
 
+# Медиана
+H = sorted([random.choice(range(99999)) for i in range(100)])
+print("Median: ", (H[49] + H[50]) / 2)
+
 
